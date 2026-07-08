@@ -1,0 +1,9 @@
+Nimbus Analytics, frequently asked questions.
+
+Plans. Nimbus offers three plans. The Free plan supports one project and up to five thousand events per month. The Pro plan supports unlimited projects and up to two million events per month. The Enterprise plan adds single sign on, a dedicated success manager, and a custom data retention policy.
+
+Pricing. The Free plan costs nothing. The Pro plan costs 49 dollars per month billed annually, or 59 dollars month to month. Enterprise pricing is custom and quoted on request.
+
+Support. Free plan users get community support. Pro plan users get email support with a one business day response time. Enterprise customers get 24 by 7 priority support and a 99.9 percent uptime guarantee.
+
+Data. All plans encrypt data at rest and in transit. Data retention is 30 days on the Free plan, 12 months on the Pro plan, and configurable on the Enterprise plan.

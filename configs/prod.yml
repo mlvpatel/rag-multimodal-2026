@@ -1,0 +1,7 @@
+# UltimateRAG production profile.
+# Loaded by src/core/config.py when ENV=prod. Environment variables always
+# override these values (Docker and Kubernetes set them at runtime).
+log_level: INFO
+embedding_provider: google
+vlm_model: moondream
+top_k: 5

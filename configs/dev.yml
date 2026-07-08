@@ -1,0 +1,7 @@
+# UltimateRAG development profile.
+# Loaded by src/core/config.py when ENV=dev (the default). Environment
+# variables always override these values.
+log_level: DEBUG
+embedding_provider: google
+vlm_model: moondream
+top_k: 5
