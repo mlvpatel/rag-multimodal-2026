@@ -1,8 +1,8 @@
 # UltimateRAG
 
-**Multimodal RAG. Retrieves across text and images at once, and shows the images it used to answer. The 2026 multimodal rung of the RagFlow line.**
+**Multimodal RAG. Retrieves across text and images at once, and shows the images it used to answer. The multimodal system in the RagFlow line.**
 
-**Part of the RagFlow line, enterprise RAG built year by year. This repository is UltimateRAG, Multimodal RAG, 2026.** See [the full line](#the-ragflow-line) below.
+**Part of the RagFlow line, a series of reference enterprise RAG implementations. This repository is UltimateRAG, Multimodal RAG.** See [the full line](#the-ragflow-line) below.
 
 UltimateRAG treats images as first class content. At index time a local vision model reads each image and writes a detailed caption, so images live in the same vector space as text chunks. A single search then returns the most relevant text and images together, the answer is grounded in both, and the images that contributed are returned and shown. It runs fully locally on Ollama at no cost.
 
@@ -135,7 +135,7 @@ docker/           Dockerfile and Compose stack
 
 ## The RagFlow line
 
-UltimateRAG is the 2026 multimodal rung in a year by year line of enterprise RAG systems, each a faithful snapshot of the best production RAG of its year.
+UltimateRAG is the multimodal implementation in the RagFlow line, a series demonstrating distinct enterprise RAG retrieval strategies.
 
 | Year | Repository | Generation |
 |---|---|---|
@@ -145,7 +145,7 @@ UltimateRAG is the 2026 multimodal rung in a year by year line of enterprise RAG
 | 2025 | [RagFlowProPlus](https://github.com/mlvpatel/RagFlowProPlus), [RagFlowKAG](https://github.com/mlvpatel/RagFlowKAG), [RagFlowCache](https://github.com/mlvpatel/RagFlowCache) | Agentic, knowledge augmented, and cache augmented |
 | 2026 | [RagFlowProMax](https://github.com/mlvpatel/RagFlowProMax), UltimateRAG (this repo) | Multi agent enterprise, and multimodal |
 
-The full line is collected in the [rag-catalog](https://github.com/mlvpatel/rag-catalog) hub, which benchmarks the main rungs on the same golden questions, keyless.
+The full line is collected in the [rag-catalog](https://github.com/mlvpatel/rag-catalog) hub, which benchmarks the main implementations on the same golden questions, keyless.
 
 ## Author
 
