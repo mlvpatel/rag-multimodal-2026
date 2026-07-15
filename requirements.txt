@@ -51,7 +51,9 @@ python-dotenv>=1.0.0
 tiktoken>=0.7.0
 tenacity>=9.0.0
 pyyaml>=6.0.0
-setuptools>=78.1.1
+# 83.0.0 patches PYSEC-2026-3447. A lower floor is satisfied by the runner's
+# preinstalled setuptools, so pip never upgrades and the vulnerable one stays.
+setuptools>=83.0.0
 
 # Testing
 pytest>=8.0.0
