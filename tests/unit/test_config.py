@@ -19,10 +19,7 @@ def test_settings_has_documented_defaults():
     assert settings.top_k == 5
     assert settings.chunk_size == 1000
     assert settings.chunk_overlap == 200
-    assert (
-        settings.database_url
-        == "postgresql://rag:rag@localhost:5432/rag_multimodal"
-    )
+    assert settings.database_url == "postgresql://rag:rag@localhost:5432/rag_multimodal"
     assert settings.redis_url == "redis://localhost:6379/0"
     assert settings.google_api_key is None
     assert settings.openai_api_key is None

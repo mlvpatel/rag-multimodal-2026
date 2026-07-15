@@ -50,7 +50,10 @@ def test_insert_application_logs_issues_insert_with_four_params():
 
     with patch.object(db_utils, "_get_pool", return_value=fake_pool):
         db_utils.insert_application_logs(
-            "session-123", "what is rag_naive?", "it is a rag app", "gemini-embedding-001"
+            "session-123",
+            "what is rag_naive?",
+            "it is a rag app",
+            "gemini-embedding-001",
         )
 
     assert cursor.execute.called
