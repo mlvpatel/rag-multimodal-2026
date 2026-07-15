@@ -1,4 +1,4 @@
-"""Vision helpers for UltimateRAG, using a local Ollama vision model.
+"""Vision helpers for rag-multimodal-2026, using a local Ollama vision model.
 
 At index time a vision model reads each image and writes a detailed caption, so
 images become first class, searchable content alongside text. Keyless: the model

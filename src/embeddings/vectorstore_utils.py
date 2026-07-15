@@ -1,4 +1,4 @@
-"""Embedding and document loading utilities for UltimateRAG.
+"""Embedding and document loading utilities for rag-multimodal-2026.
 
 Two things live here: an embedder, used to embed text chunks and image captions
 into the shared vector space, and a plain text loader, used to read an uploaded

@@ -5,7 +5,7 @@ import sys
 
 from src.core.config import settings
 
-logger = logging.getLogger("ultimaterag")
+logger = logging.getLogger("rag_multimodal")
 
 
 def configure_logging() -> None:

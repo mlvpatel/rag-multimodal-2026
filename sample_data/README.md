@@ -1,6 +1,6 @@
 # Sample data
 
-Three text documents and two images so anyone can run UltimateRAG and judge its multimodal performance without supplying their own files. The images are captioned by the vision model at load time, so they become searchable alongside the text.
+Three text documents and two images so anyone can run rag-multimodal-2026 and judge its multimodal performance without supplying their own files. The images are captioned by the vision model at load time, so they become searchable alongside the text.
 
 | File | Type | Use case it demonstrates |
 |---|---|---|

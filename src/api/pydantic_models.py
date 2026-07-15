@@ -1,4 +1,4 @@
-"""Request and response models for the UltimateRAG API."""
+"""Request and response models for the rag-multimodal-2026 API."""
 
 from datetime import datetime
 from typing import Optional, Union

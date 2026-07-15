@@ -1,4 +1,4 @@
-"""LLM helpers for UltimateRAG.
+"""LLM helpers for rag-multimodal-2026.
 
 The provider is chosen from the model name, so the same code serves OpenAI,
 Anthropic, and local Ollama models. The Ollama context window is widened so

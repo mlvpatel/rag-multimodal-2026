@@ -1,9 +1,9 @@
 """
-Database utilities for UltimateRAG, conversation memory and document
+Database utilities for rag-multimodal-2026, conversation memory and document
 records on Postgres via psycopg 3.
 
-This module preserves the public interface of the RAGFlow SQLite
-baseline (src/api/db_utils.py in the RAGFlow repo) while swapping the
+This module preserves the public interface of the rag-multimodal-2026 SQLite
+baseline (src/api/db_utils.py in the rag-multimodal-2026 repo) while swapping the
 storage engine to Postgres, the same instance used for pgvector.
 
 Design notes:

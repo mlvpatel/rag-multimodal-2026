@@ -1,4 +1,4 @@
-"""Chat interface for the UltimateRAG Streamlit app.
+"""Chat interface for the rag-multimodal-2026 Streamlit app.
 
 Shows the answer, any images that were retrieved and used (with their captions),
 and a trace of the multimodal retrieval, so the text and image sources are both

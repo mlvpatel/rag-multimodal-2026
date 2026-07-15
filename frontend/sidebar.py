@@ -9,7 +9,7 @@ MODELS = ["qwen2.5:7b-instruct", "llama3.2:3b", "gpt-4o-mini", "gpt-4o"]
 
 def display_sidebar() -> None:
     with st.sidebar:
-        st.header("UltimateRAG")
+        st.header("rag-multimodal-2026")
         st.session_state["model"] = st.selectbox("Model", MODELS, index=0)
 
         st.subheader("Documents")

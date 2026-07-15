@@ -1,4 +1,4 @@
-# UltimateRAG production profile.
+# rag-multimodal-2026 production profile.
 # Loaded by src/core/config.py when ENV=prod. Environment variables always
 # override these values (Docker and Kubernetes set them at runtime).
 log_level: INFO

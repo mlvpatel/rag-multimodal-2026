@@ -1,4 +1,4 @@
-"""Multimodal RAG engine for UltimateRAG.
+"""Multimodal RAG engine for rag-multimodal-2026.
 
 One vector search returns the most relevant text chunks and image captions
 together. The answer is grounded in both, and the images that contributed are
@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 _IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif", ".webp")
 
 _QA_SYSTEM = (
-    "You answer questions for UltimateRAG using the retrieved context, which "
+    "You answer questions for rag-multimodal-2026 using the retrieved context, which "
     "combines text passages and descriptions of images. Use only what is given. "
     "If it does not contain the answer, say you do not have that information "
     "rather than inventing one.\n\nContext:\n{context}"

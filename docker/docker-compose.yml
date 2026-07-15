@@ -1,4 +1,4 @@
-# RagFlowPro stack.
+# rag-modular-2023 stack.
 # Data services (postgres, redis) run standalone for local development and tests.
 # App services (api, worker, streamlit) build from the project Dockerfile.
 #
@@ -10,26 +10,26 @@
 services:
   postgres:
     image: pgvector/pgvector:pg16
-    container_name: ultimaterag-postgres
+    container_name: rag_multimodal-postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER: ragflow
-      POSTGRES_PASSWORD: ragflow
-      POSTGRES_DB: ultimaterag
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag
+      POSTGRES_DB: rag_multimodal
     ports:
       - "5432:5432"
     volumes:
-      - ultimaterag-pgdata:/var/lib/postgresql/data
+      - rag_multimodal-pgdata:/var/lib/postgresql/data
       - ./init:/docker-entrypoint-initdb.d:ro
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ragflow -d ultimaterag"]
+      test: ["CMD-SHELL", "pg_isready -U rag_naive -d rag_multimodal"]
       interval: 5s
       timeout: 5s
       retries: 10
 
   redis:
     image: redis:7-alpine
-    container_name: ultimaterag-redis
+    container_name: rag_multimodal-redis
     restart: unless-stopped
     ports:
       - "6379:6379"
@@ -43,8 +43,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    image: ultimaterag:latest
-    container_name: ultimaterag-api
+    image: rag_multimodal:latest
+    container_name: rag_multimodal-api
     restart: unless-stopped
     command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000
     ports:
@@ -53,7 +53,7 @@ services:
       - path: ../.env
         required: false
     environment:
-      DATABASE_URL: postgresql://ragflow:ragflow@postgres:5432/ultimaterag
+      DATABASE_URL: postgresql://rag:rag@postgres:5432/rag_multimodal
       REDIS_URL: redis://redis:6379/0
     depends_on:
       postgres:
@@ -65,15 +65,15 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    image: ultimaterag:latest
-    container_name: ultimaterag-worker
+    image: rag_multimodal:latest
+    container_name: rag_multimodal-worker
     restart: unless-stopped
     command: celery -A src.worker.celery_app.celery_app worker --loglevel=INFO
     env_file:
       - path: ../.env
         required: false
     environment:
-      DATABASE_URL: postgresql://ragflow:ragflow@postgres:5432/ultimaterag
+      DATABASE_URL: postgresql://rag:rag@postgres:5432/rag_multimodal
       REDIS_URL: redis://redis:6379/0
     depends_on:
       postgres:
@@ -85,8 +85,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    image: ultimaterag:latest
-    container_name: ultimaterag-streamlit
+    image: rag_multimodal:latest
+    container_name: rag_multimodal-streamlit
     restart: unless-stopped
     command: streamlit run frontend/streamlit_app.py --server.port 8501 --server.address 0.0.0.0
     ports:
@@ -100,4 +100,4 @@ services:
       - api
 
 volumes:
-  ultimaterag-pgdata:
+  rag_multimodal-pgdata:

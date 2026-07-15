@@ -1,4 +1,4 @@
-"""UltimateRAG Streamlit application entry point."""
+"""rag-multimodal-2026 Streamlit application entry point."""
 
 import os
 import sys
@@ -12,8 +12,8 @@ from frontend.sidebar import display_sidebar  # noqa: E402
 
 
 def main() -> None:
-    st.set_page_config(page_title="UltimateRAG", layout="wide")
-    st.title("UltimateRAG")
+    st.set_page_config(page_title="rag-multimodal-2026", layout="wide")
+    st.title("rag-multimodal-2026")
     st.caption(
         "Multimodal RAG, 2026. Retrieves across text and images at once, and "
         "shows the images it used to answer."

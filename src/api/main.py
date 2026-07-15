@@ -1,4 +1,4 @@
-"""UltimateRAG API: multimodal RAG chat plus document and image management.
+"""rag-multimodal-2026 API: multimodal RAG chat plus document and image management.
 
 The chat endpoint retrieves across text and images at once and returns the
 answer along with the images that contributed, so callers and the UI can see
@@ -70,7 +70,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="UltimateRAG API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="rag-multimodal-2026 API", version="1.0.0", lifespan=lifespan)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(

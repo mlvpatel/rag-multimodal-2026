@@ -1,4 +1,4 @@
-# UltimateRAG developer commands.
+# rag-multimodal-2026 developer commands.
 # Bring up the data services first, then build and test against them.
 
 COMPOSE = docker compose -f docker/docker-compose.yml

@@ -1,4 +1,4 @@
-"""Background task: asynchronously index a document or image for UltimateRAG."""
+"""Background task: asynchronously index a document or image for rag-multimodal-2026."""
 
 import logging
 
@@ -6,7 +6,7 @@ from src.api.db_utils import delete_document_record, insert_document_record
 from src.multimodal.engine import index_document
 from src.worker.celery_app import celery_app
 
-logger = logging.getLogger("ultimaterag")
+logger = logging.getLogger("rag_multimodal")
 
 
 @celery_app.task(name="process_document")

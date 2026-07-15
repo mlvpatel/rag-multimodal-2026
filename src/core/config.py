@@ -1,4 +1,4 @@
-"""Single settings source for UltimateRAG.
+"""Single settings source for rag-multimodal-2026.
 
 Precedence, highest to lowest:
 1. Environment variables (case insensitive), including a `.env` file if present.
@@ -40,7 +40,7 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    database_url: str = "postgresql://ragflow:ragflow@localhost:5432/ultimaterag"
+    database_url: str = "postgresql://rag:rag@localhost:5432/rag_multimodal"
     redis_url: str = "redis://localhost:6379/0"
     google_api_key: str | None = None
     openai_api_key: str | None = None

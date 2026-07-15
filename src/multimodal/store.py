@@ -1,4 +1,4 @@
-"""Unified multimodal content store for UltimateRAG.
+"""Unified multimodal content store for rag-multimodal-2026.
 
 Text chunks and image captions live in one pgvector collection, so a single
 similarity search returns the most relevant content regardless of modality.
@@ -12,7 +12,7 @@ from typing import List
 
 logger = logging.getLogger(__name__)
 
-CONTENT_COLLECTION = "ultimaterag_content"
+CONTENT_COLLECTION = "rag_multimodal_content"
 
 _store = None
 

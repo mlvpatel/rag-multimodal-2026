@@ -1,20 +1,20 @@
-# UltimateRAG
+# rag-multimodal-2026
 
-**Multimodal RAG. Retrieves across text and images at once, and shows the images it used to answer. The multimodal system in the RagFlow line.**
+**Multimodal RAG. Retrieves across text and images at once, and shows the images it used to answer. The multimodal system in the RAG line.**
 
-**Part of the RagFlow line, a series of reference enterprise RAG implementations. This repository is UltimateRAG, Multimodal RAG.** See [the full line](#the-ragflow-line) below.
+**Part of the RAG line, a series of reference enterprise RAG implementations. This repository is rag-multimodal-2026, Multimodal RAG.** See [the full line](#the-rag_naive-line) below.
 
-UltimateRAG treats images as first class content. At index time a local vision model reads each image and writes a detailed caption, so images live in the same vector space as text chunks. A single search then returns the most relevant text and images together, the answer is grounded in both, and the images that contributed are returned and shown. It runs fully locally on Ollama at no cost.
+rag-multimodal-2026 treats images as first class content. At index time a local vision model reads each image and writes a detailed caption, so images live in the same vector space as text chunks. A single search then returns the most relevant text and images together, the answer is grounded in both, and the images that contributed are returned and shown. It runs fully locally on Ollama at no cost.
 
-[![CI](https://github.com/mlvpatel/UltimateRAG/actions/workflows/ci.yml/badge.svg)](https://github.com/mlvpatel/UltimateRAG/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) ![Modality](https://img.shields.io/badge/retrieval-text%20plus%20images-blue) ![Postgres](https://img.shields.io/badge/Postgres-pgvector-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+[![CI](https://github.com/mlvpatel/rag-multimodal-2026/actions/workflows/ci.yml/badge.svg)](https://github.com/mlvpatel/rag-multimodal-2026/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) ![Modality](https://img.shields.io/badge/retrieval-text%20plus%20images-blue) ![Postgres](https://img.shields.io/badge/Postgres-pgvector-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
-![UltimateRAG answering from an image and showing it](assets/videos/ultimaterag-demo.gif)
+![rag-multimodal-2026 answering from an image and showing it](assets/videos/rag_multimodal-demo.gif)
 
-The clip above is a live, unedited run on local models. The question retrieves a chart image, the image is shown, and the answer is grounded in what the vision model read from it. A full resolution screenshot is at [assets/screenshots/ultimaterag-ui.png](assets/screenshots/ultimaterag-ui.png). No paid keys were used.
+The clip above is a live, unedited run on local models. The question retrieves a chart image, the image is shown, and the answer is grounded in what the vision model read from it. A full resolution screenshot is at [assets/screenshots/rag_multimodal-ui.png](assets/screenshots/rag_multimodal-ui.png). No paid keys were used.
 
 ## What makes it multimodal
 
-Text only RAG is blind to everything in an image: the chart, the diagram, the screenshot, the scanned page. UltimateRAG closes that gap.
+Text only RAG is blind to everything in an image: the chart, the diagram, the screenshot, the scanned page. rag-multimodal-2026 closes that gap.
 
 | Stage | What happens |
 |---|---|
@@ -133,19 +133,17 @@ tests/            unit and integration tests
 docker/           Dockerfile and Compose stack
 ```
 
-## The RagFlow line
+## The RAG line
 
-UltimateRAG is the multimodal implementation in the RagFlow line, a series demonstrating distinct enterprise RAG retrieval strategies.
+rag-multimodal-2026 is the multimodal implementation in the RAG line, a series demonstrating distinct enterprise RAG retrieval strategies.
 
 | Year | Repository | Generation |
 |---|---|---|
-| 2022 | [RagFlow](https://github.com/mlvpatel/RagFlow) | Naive RAG, single dense retrieval |
-| 2023 | [RagFlowPlus](https://github.com/mlvpatel/RagFlowPlus) | Advanced RAG, hybrid retrieval and reranking |
-| 2024 | [RagFlowPro](https://github.com/mlvpatel/RagFlowPro) | Modular production RAG, pgvector, streaming, evaluation |
-| 2025 | [RagFlowProPlus](https://github.com/mlvpatel/RagFlowProPlus), [RagFlowKAG](https://github.com/mlvpatel/RagFlowKAG), [RagFlowCache](https://github.com/mlvpatel/RagFlowCache) | Agentic, knowledge augmented, and cache augmented |
-| 2026 | [RagFlowProMax](https://github.com/mlvpatel/RagFlowProMax), UltimateRAG (this repo) | Multi agent enterprise, and multimodal |
-
-The full line is collected in the [rag-catalog](https://github.com/mlvpatel/rag-catalog) hub, which benchmarks the main implementations on the same golden questions, keyless.
+| 2022 | [rag-naive-2022](https://github.com/mlvpatel/rag-naive-2022) | Naive RAG, single dense retrieval |
+| 2023 | [rag-advanced-2023](https://github.com/mlvpatel/rag-advanced-2023) | Advanced RAG, hybrid retrieval and reranking |
+| 2024 | [rag-modular-2023](https://github.com/mlvpatel/rag-modular-2023) | Modular production RAG, pgvector, streaming, evaluation |
+| 2025 | [rag-agentic-2025](https://github.com/mlvpatel/rag-agentic-2025), [rag-graph-2024](https://github.com/mlvpatel/rag-graph-2024), [rag-cache-2024](https://github.com/mlvpatel/rag-cache-2024) | Agentic, knowledge augmented, and cache augmented |
+| 2026 | [rag-multiagent-2026](https://github.com/mlvpatel/rag-multiagent-2026), rag-multimodal-2026 (this repo) | Multi agent enterprise, and multimodal |
 
 ## Author
 

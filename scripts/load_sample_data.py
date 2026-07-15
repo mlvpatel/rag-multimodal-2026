@@ -1,4 +1,4 @@
-"""Load the bundled sample documents and images into UltimateRAG.
+"""Load the bundled sample documents and images into rag-multimodal-2026.
 
 Run this after the stack is up so anyone can try the system on the included
 sample data. For a fully local, no cost run:

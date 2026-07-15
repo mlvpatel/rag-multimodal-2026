@@ -1,1 +1,1 @@
-"""Multimodal retrieval layer for UltimateRAG (text and images)."""
+"""Multimodal retrieval layer for rag-multimodal-2026 (text and images)."""

@@ -1,4 +1,4 @@
-# UltimateRAG development profile.
+# rag-multimodal-2026 development profile.
 # Loaded by src/core/config.py when ENV=dev (the default). Environment
 # variables always override these values.
 log_level: DEBUG
