@@ -1,4 +1,4 @@
-# UltimateRAG image for the api, worker, and streamlit services.
+# rag-multimodal-2026 image for the api, worker, and streamlit services.
 FROM python:3.11-slim
 
 ENV PYTHONUNBUFFERED=1 \
